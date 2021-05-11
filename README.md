@@ -1,4 +1,4 @@
-# career-paths
+# STEM Nation
 
 ### Some code drawn from...
 *   Timeline Scribble for the timeline format https://codepen.io/Fischaela/pen/sJdqg/
