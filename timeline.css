@@ -1,0 +1,73 @@
+/* timeline */  
+
+.timeline {
+    margin: 4em auto;
+    position: relative;
+    max-width: 46em;
+}
+
+/* the black line for the timeline */
+.timeline::before {
+    background-color: var(--color-1);
+    content: '';
+    margin-left: -1px;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 2px;
+    height: 100%;
+}
+  
+.timeline-event {
+    position: relative;
+}
+
+.timeline-event:hover .timeline-event-icon {
+    transform: rotate(-45deg);
+    background-color: var(--color-3);
+}
+
+/* color the box on hover */
+.timeline-event:hover .timeline-event-thumbnail {
+    box-shadow: inset 40em 0 0 0 var(--color-3);
+}
+  
+.timeline-event-copy {
+    padding: 2em;
+    position: relative;
+    /* top: -1.875em; */
+    left: 4em;
+    width: 80%;
+}
+
+.timeline-event-copy strong {
+    font-weight: 700;
+}
+
+.timeline-event-copy p:not(.timeline-event-thumbnail) {
+    padding-bottom: 1.2em;
+}
+
+.timeline-event-icon {
+    transition: transform 0.2s ease-in;
+    transform: rotate(45deg);    
+    background-color: var(--color-1);
+    outline: 10px solid var(--color-2);
+    display: block;
+    margin: 0.5em 0.5em 0.5em -0.5em;
+    position: absolute;
+    top: 2em;
+    left: 0em;
+    width: 1em;
+    height: 1em;
+}
+  
+.timeline-event-thumbnail {
+    transition: box-shadow 0.2s ease-in 0.1s;
+    color: var(--color-2);
+    font-size: 0.75em;
+    background-color: var(--color-1);
+    display: inline-block;
+    margin-bottom: 1.2em;
+    padding: 0.25em 1em 0.2em 1em;
+}
