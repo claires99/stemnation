@@ -1,3 +1,9 @@
+:root {
+    --color-1: #261C15;
+    --color-2: white;
+    --color-3: #1dd3b0;
+}
+
 .flowchart {
     box-sizing: border-box;
     outline: none;
@@ -34,7 +40,7 @@
     top: 50%;
     left: 0.5em;
     width: 1em;
-    border-top: 2px solid black;
+    border-top: 2px solid var(--color-1);
 }
 
 .flowchart > ul {
@@ -57,7 +63,7 @@
     top: 0;
     left: 1.5em;
     height: 100%;
-    border-left: 2px solid black;
+    border-left: 2px solid var(--color-1);
 }
 
 /* short lines after */
@@ -67,7 +73,7 @@
     top: 50%;
     left: 1.5em;
     width: 1em;
-    border-top: 2px solid black;
+    border-top: 2px solid var(--color-1);
 }
 
 .flowchart li:first-child:before {

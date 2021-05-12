@@ -1,3 +1,9 @@
+:root {
+    --color-1: #261C15;
+    --color-2: white;
+    --color-3: #1dd3b0;
+}
+
 /* timeline */  
 
 .timeline {
@@ -24,7 +30,7 @@
 
 .timeline-event:hover .timeline-event-icon {
     transform: rotate(-45deg);
-    background-color: var(--color-3);
+    background: linear-gradient(45deg, #c1f7dcff, #1dd3b0ff, #94b0daff);;
 }
 
 /* color the box on hover */
