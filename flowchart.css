@@ -1,0 +1,100 @@
+.flowchart {
+    box-sizing: border-box;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    /* font-size: 2vw; */
+}
+
+.flowchart *, .flowchart *::after, .flowchart *::before {
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.flowchart ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+}
+
+/* short line before the bracket */
+.flowchart ul:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0.5em;
+    width: 1em;
+    border-top: 2px solid black;
+}
+
+.flowchart > ul {
+    padding: 0;
+}
+
+.flowchart li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding: 0.1em 0.5em 0.2em 3em;
+}
+
+/* vertical line downwards */
+.flowchart li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 1.5em;
+    height: 100%;
+    border-left: 2px solid black;
+}
+
+/* short lines after */
+.flowchart li:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 1.5em;
+    width: 1em;
+    border-top: 2px solid black;
+}
+
+.flowchart li:first-child:before {
+    top: 50%;
+    height: 50%;
+}
+
+.flowchart li:last-child:before {
+    bottom: 50%;
+    height: 50%;
+}
+
+/* hide the downwards line */
+.flowchart li:only-child:before {
+    display: none;
+}
+
+/* hide the first part of the short horizontal line */
+.flowchart li:only-child:before {
+    display: none;
+    padding: 0;
+    margin: 0;
+    left: -1em;
+    right: -1em;
+}
+
+.soloflow {
+    left: -1em;
+}

@@ -1,7 +1,7 @@
 /* timeline */  
 
 .timeline {
-    margin: 4em auto;
+    margin: 0em auto 4em;
     position: relative;
     max-width: 46em;
 }

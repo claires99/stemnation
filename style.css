@@ -50,6 +50,26 @@ body {
     margin: 0;
 }
 
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 1.5em;
+    padding-top: 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
 /* The hero image */
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
@@ -73,10 +93,9 @@ body {
     color: var(--color-2);
 }
 
-h1 {
-    letter-spacing: 0.1em;
+.hero-text h1 {
     font-size: 3em;
-    text-transform: uppercase;
+    margin-top: 0;
 }
 
 .hero-text p {
@@ -120,14 +139,7 @@ h1 {
     float: left;
 }
 
-h2 {
-    font-size: 2em;
-    text-align: center;
-    margin-top: 1em;
-    padding-top: 0.5em;
-}
-
-h3 {
+.timeline h3 {
     font-size: 1.5em;
     margin: 0.8em 0 0.5em;
 }
@@ -151,7 +163,7 @@ a {
 }
 
 a:hover {
-    background-color: #c1f7dc;
+    background-color: #FFD5FF;
 }
 
 strong {
@@ -168,14 +180,14 @@ strong {
     z-index: 99; /* Make sure it does not overlap */
     border: none;
     outline: none;
-    background-color: #f45b69;
+    background-color: #FFD5FF;
     color: white;
     cursor: pointer;
     padding: 10px 15px;
     border-radius: 10px;
     font-size: 24px;
-  }
+}
   
-  #topBtn:hover {
-    background-color: #756D54;
-  }
+#topBtn:hover {
+    background-color: #f45b69;
+}
